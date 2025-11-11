@@ -3,3 +3,6 @@ def calculate_factorial(n):
         return 1
     
     return n * calculate_factorial(n-1)
+
+def calculate_combination(n, k):
+    return calculate_factorial(n) / (calculate_factorial(k) * calculate_factorial(n-k))
